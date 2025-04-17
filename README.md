@@ -1,119 +1,108 @@
-🔐 Password Manager
+# 🔐 Password Manager
 
-A simple, secure, and elegant password manager app with encryption, a modern GUI, and powerful features — all built in Python using ttkbootstrap and cryptography.
+A simple, secure, and elegant password manager app with encryption, a modern GUI, and powerful features — all built in Python using `ttkbootstrap` and `cryptography`.
 
-📆 Features
+---
 
-✅ Encrypted Password Storage (Fernet/AES)
+## 📆 Features
 
-🔑 Password Generator
+- ✅ **Encrypted Password Storage** (Fernet/AES)
+- 🔑 **Password Generator**
+- 👁️ **Toggle Password Visibility**
+- 🌗 **Light/Dark Theme Switcher**
+- 📤 **Export to CSV**
+- 💻 **Bootstrap-like UI** with ttkbootstrap
 
-👁️ Toggle Password Visibility
+---
 
-🌗 Light/Dark Theme Switcher
+## 📁 Project Structure
 
-📤 Export to CSV
-
-💻 Bootstrap-like UI with ttkbootstrap
-
-📁 Project Structure
-
+```
 password-manager/
-|
 ├── main.py               # GUI application logic
 ├── crypto_utils.py       # Encryption/decryption helper functions
 ├── key.key               # Auto-generated encryption key
 ├── passwords.enc         # Encrypted password database
 ├── passwords_export.csv  # Exported passwords (generated)
 └── README.md             # This file
+```
 
-🚀 How to Run
+---
 
-1. Install Python
+## 🚀 How to Run
 
-Download from https://www.python.org
+### 1. Install Python
+Download and install from: [https://www.python.org](https://www.python.org)
 
-2. Install Required Libraries
-
+### 2. Install Required Libraries
+```bash
 pip install cryptography ttkbootstrap
+```
 
-3. Run the App
-
+### 3. Run the App
+```bash
 python main.py
+```
 
-The UI will launch and you're ready to manage your passwords.
+The UI will launch, and you're ready to manage your passwords.
 
-🧐 How It Works
+---
 
-All data is encrypted using Fernet (AES-based symmetric encryption)
+## 🧐 How It Works
 
-A key is saved in key.key (generated if missing)
+- All data is encrypted using Fernet (AES-based symmetric encryption)
+- A key is saved in `key.key` (auto-generated if missing)
+- Passwords are securely written to `passwords.enc`
+- You can view, generate, and export passwords from the UI
 
-Passwords are securely written to passwords.enc
+---
 
-You can view, generate, and export passwords from the UI
+## 🔒 Security Tips
 
-🔒 Security Tips
+- Keep `key.key` safe — it's required to decrypt your data!
+- `passwords.enc` is encrypted and can be safely stored
+- **Do NOT upload** `key.key` or `passwords.enc` to GitHub
+- Always add sensitive files to `.gitignore`
 
-Keep key.key safe — it's required to decrypt your data!
+---
 
-passwords.enc is encrypted and can be safely stored
+## 📓 App Features Usage
 
-Do NOT upload key.key or passwords.enc to GitHub
+### ✅ Save a Password
+1. Fill in Website, Email/Username, and Password
+2. Click **Save**
+3. Your data is encrypted and stored securely
 
-Always add sensitive files to .gitignore
+### 🔐 Generate a Password
+- Click **Generate Password**
+- A secure random password will appear in the field
 
-📓 App Features Usage
+### 👁️ Toggle Password Visibility
+- Click the **Show/Hide** button to toggle masking
 
-✅ Save a Password
+### 📂 View All Passwords
+- Click **View All**
+- A new window will display all decrypted passwords
 
-Fill in Website, Email/Username, and Password
+### 📃 Export to CSV
+- Click **Export to CSV**
+- Passwords will be saved to `passwords_export.csv` (plaintext)
 
-Click "Save"
+### 🌚/🌜 Theme Toggle
+- Click the theme button to switch between Light and Dark modes
 
-Your data is encrypted and stored securely
+---
 
-🔐 Generate a Password
+## 🤝 Final Notes
 
-Click "Generate Password"
+- Built with ❤️ in Python
+- Ideal for beginners to learn about GUI, encryption, and data management
+- Extendable with features like:
+  - Master password
+  - Password strength checker
+  - Cloud sync or local DB
+  - Multi-user support
 
-A secure random password will appear in the field
+---
 
-👁️ Toggle Password Visibility
-
-Click "Show/Hide" button to toggle masking
-
-📂 View All Passwords
-
-Click "View All"
-
-A new window will display all decrypted passwords
-
-📃 Export to CSV
-
-Click "Export to CSV"
-
-Passwords are saved to passwords_export.csv in plain text (for backup)
-
-🌚/🌜 Theme Toggle
-
-Click theme toggle to switch between Light and Dark modes
-
-🤝 Final Notes
-
-Built with ❤️ in Python
-
-Ideal for beginners to learn about GUI, encryption, and data management
-
-Extendable with features like:
-
-Master password
-
-Password strength checker
-
-Cloud sync or local DB
-
-Multi-user support
-
-Need screenshots or a PDF version for submission? Just ask!
-
+> Need screenshots or a downloadable PDF version for submission? Just ask!
