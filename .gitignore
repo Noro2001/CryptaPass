@@ -1,0 +1,11 @@
+key.key
+passwords.enc
+passwords_export.csv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.DS_Store
+.idea/
+.vscode/
