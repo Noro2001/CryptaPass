@@ -61,8 +61,6 @@ The UI will launch, and you're ready to manage your passwords.
 
 - Keep `key.key` safe — it's required to decrypt your data!
 - `passwords.enc` is encrypted and can be safely stored
-- **Do NOT upload** `key.key` or `passwords.enc` to GitHub
-- Always add sensitive files to `.gitignore`
 
 ---
 
@@ -92,17 +90,3 @@ The UI will launch, and you're ready to manage your passwords.
 - Click the theme button to switch between Light and Dark modes
 
 ---
-
-## 🤝 Final Notes
-
-- Built with ❤️ in Python
-- Ideal for beginners to learn about GUI, encryption, and data management
-- Extendable with features like:
-  - Master password
-  - Password strength checker
-  - Cloud sync or local DB
-  - Multi-user support
-
----
-
-> Need screenshots or a downloadable PDF version for submission? Just ask!
